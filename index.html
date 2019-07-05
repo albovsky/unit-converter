@@ -12,7 +12,12 @@
 <body>
 	<div class="container">
   <form id="converter" onsubmit="return false">  
-		<input type="text" id="number">m
+		<input type="text" id="number">
+		<select id="mySelect">
+			<option value="meters">Meters</option>
+			<option value="centimeters">Centimeters</option>
+			<option value="millimeters">Millimeters</option>
+		</select>
 		<button class="convertButton" onclick="convert()">Convert</button>
 		<input type="text" id="result">cm
 	</form> 
