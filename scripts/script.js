@@ -1,5 +1,5 @@
 function convert() {
-	var number = document.getElementById("number").value;
-	resultt = document.getElementById("result")
-	resultt.appendChild(myInput)
+	var text = document.getElementById("number").value;
+	number = parseFloat(text);
+	document.getElementById("result").value = number;
 }
