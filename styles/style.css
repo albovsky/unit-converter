@@ -1,0 +1,79 @@
+/*@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+@font-face {
+  font-family: moon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/moon.ttf);
+}
+
+@font-face {
+  font-family: lasenter;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/lasenter.ttf);
+}*/
+html,
+  body {
+    background-color: black;
+  }
+
+.cont{
+	position: relative;
+}
+
+  .albovsky {
+		text-align: center;
+		position: absolute;
+		top: 40vh;
+		border: 1px solid red;
+
+    color: #ff84ee;
+    font-family: lasenter;
+    font-size: 5vw;
+    transform: rotate(-10deg);
+		-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    text-shadow:
+    .1vw 0vw .25vw #ff84ee, .2vw 0vw .25vw #ff84ee, .4vw 0vw .25vw #ff84ee,
+    .1vw 0vw .1vw #f90085, .2vw 0vw 0vw #f90085, .4vw 0vw 0vw #f90085,
+    .1vw 0vw .1vw #f90085, .2vw 0vw .1vw #f90085, .4vw 0vw 0vw #f90085,
+    .1vw 0vw .8vw #f90085, .2vw 0vw .8vw #f90085, .4vw 0vw .8vw #f90085, .2vw 0vw .5vw #f90085,
+    .1vw 0vw .5vw #f90085, .2vw 0vw .5vw #f90085, .4vw 0vw .5vw #f90085,
+    .1vw 0vw 10vw #f90085, .2vw 0vw 10vw #f90085, .4vw 0vw 10vw #f90085;
+  }
+
+	.jackpots {
+    font-family: moon;
+    font-size: 6.3vw;
+    margin-left: 1.5vw;
+		transform: scale(0.5);
+  }
+
+	.jackpots {
+    animation: jackpots 1s 0s ease infinite;
+    -moz-animation: jackpots 1s 0s ease infinite;
+    /* Firefox */
+    -webkit-animation: jackpots 1s 0s ease infinite;
+    /* Safari and Chrome */
+    -o-animation: jackpots 1s 0s ease infinite;
+    /* Opera */
+  }
+
+  @keyframes jackpots {
+    0%,
+    100% {
+    text-shadow:
+    -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128,
+    -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+    -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+      color: #FED128;
+    }
+    50% {
+    text-shadow:
+    -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12,
+    -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
+    -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
+      color: #705C12;
+    }
+  }
+
+  #converter {
+    color: white;
+  }
