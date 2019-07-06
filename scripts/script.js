@@ -7,6 +7,8 @@ function convert() {
 }
 
 function determineUnit() {
-	var index = document.getElementById("mySelect").selectedIndex;
+	var index = document.getElementById("mySelect1").selectedIndex;
 	alert(index);
 }
+
+document.getElementById("Reset").reset();
