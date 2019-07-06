@@ -11,14 +11,14 @@
 }*/
 html,
   body {
-    background-color: white;
+    background-color: lightgray;
   }
 
 .container {
   width: 700px;
   height: 150px;
-  background-color: lightgray;
-
+  background-color: white;
+  border-radius: 12px;
   padding: 20px;
 
   position: absolute;
