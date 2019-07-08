@@ -3,8 +3,11 @@ var number;
 var index;
 var index2;
 
+document.getElementById("userInputNumber").addEventListener('input', convert);
+document.getElementById("userInputNumber").addEventListener('change', convert);
+
 function convert() {
-	text = document.getElementById("number").value;
+	text = document.getElementById("userInputNumber").value;
 	number = parseFloat(text);
 	determineUnit();
 	convertUnit();
