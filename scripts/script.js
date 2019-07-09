@@ -1,43 +1,49 @@
-var text;
-var number;
-var index;
-var index2;
 
-document.getElementById("userInputNumber").addEventListener('input', convert);
-document.getElementById("userInputNumber").addEventListener('change', convert);
+var number;
+var indexOfInput;
+var indexOfOutput;
 
 function convert() {
 	text = document.getElementById("userInputNumber").value;
 	number = parseFloat(text);
+	number = new Big(number);
 	determineUnit();
 	convertUnit();
-	document.getElementById("result").value = number;
+	document.getElementById("result").value = number.toString();
 }
 
 function determineUnit() {
-	index = document.getElementById("mySelect1").selectedIndex;
-	if (index === 0) {
-	number = number * 1000;
-	} else if (index === 1) {
-		number = number * 1;
-	} else if (index === 2) {
-		number = number * 0.01;
+	indexOfInput = document.getElementById("mySelect1").selectedIndex;
+	if (indexOfInput === 0) {
+	number = number.times(1000);
+	} else if (indexOfInput === 1) {
+		number = number.times(1);
+	} else if (indexOfInput === 2) {
+		number = number.times(0.01);
 	} else {
-		number = number * 0.001;
+		number = number.times(0.001);
 	}
+	
+
+	// document.getElementById("par").value = number; //for input tests
 }
 
 function convertUnit() {
-	index2 = document.getElementById("mySelect2").selectedIndex;
-	if (index2 === 0) {
-	number = number * 0.001;
-	} else if (index2 === 1) {
-		number = number * 1;
-	} else if (index2 === 2) {
-		number = number * 100;
+	indexOfOutput = document.getElementById("mySelect2").selectedIndex;
+	if (indexOfOutput === 0) {
+	number = number.times(0.001);
+	} else if (indexOfOutput === 1) {
+		number = number.times(1);
+	} else if (indexOfOutput === 2) {
+		number = number.times(100);
 	} else {
-		number = number * 1000;
+		number = number.times(1000);
 	}
+	
 }
 
-	document.getElementById("Reset").reset();
+var x = Big(0.3);
+var y = x.minus(0.1);
+var z = y.toString();
+
+
