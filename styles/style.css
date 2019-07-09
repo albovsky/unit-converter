@@ -12,10 +12,21 @@
 html,
   body {
     background-color: lightgray;
+    box-sizing: border-box;
   }
 
+.test {
+  border: 1px solid red;
+}
+
+
+
 .container {
-  width: 700px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 500px;
   height: 150px;
   background-color: white;
   border-radius: 12px;
@@ -25,8 +36,35 @@ html,
   top: 50%;
   left: 50%;
 
-  margin: -95px 0 0 -370px;
+  margin: -95px 0 0 -270px;
 }
+
+.input {
+
+  flex-basis: 200px;
+}
+
+.output {
+ flex-basis: 200px;
+}
+
+#userInputNumber {
+  width: 100%;
+}
+
+#result {
+  width: 100%;
+}
+
+
+#mySelect1 {
+  width: 100%;
+}
+
+#mySelect2 {
+  width: 100%;
+}
+
 
 .convertButton {
   margin: 10px;

@@ -10,32 +10,41 @@
   <title>Albovsky.com</title>
 </head>
 <body>
-	<div class="container">
-  <form id="converter" onsubmit="return false"> 
-	  
+	
+  <form id="converter" onsubmit="return false" autocomplete="off"> 
+  	<div class="container ">
+	  <div class="input  raw">
 		<input type="text" id="userInputNumber" onkeyup="convert()">
 	  
-		<select id="mySelect1" size="4" onchange="convert()">
+		<select id="mySelect1" size="5" onchange="convert()">
+			<optgroup label="Metric">
 			<option value="kilometers">Kilometers</option>
 			<option value="meters" selected>Meters</option>
 			<option value="centimeters">Centimeters</option>
 			<option value="millimeters">Millimeters</option>
+			</optgroup>
 		</select>
+		</div>
 	  
+	  <div class="output  raw">
 		<input type="text" id="result" disabled>
 	  
-		<select id="mySelect2" size="4" onchange="convert()">
+		<select id="mySelect2" size="5" onchange="convert()">
+			<optgroup label="Metric">
 			<option value="kilometers" selected>Kilometers</option>
 			<option value="meters">Meters</option>
 			<option value="centimeters">Centimeters</option>
 			<option value="millimeters">Millimeters</option>
+			</optgroup>
 		</select>
+	</div>
+
 	  
 	  
 	  <!-- <input type="text" id="par"> --> <!-- for input tests  -->
-	  
+	  </div>
 	</form>
-  </div>
+  
   <script type="text/javascript" src="scripts/script.js"></script>
 
 </body>
